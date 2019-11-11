@@ -1,0 +1,156 @@
+* {
+    font-family: 'Pangolin', cursive;
+
+}
+body {
+    margin: 0;
+    list-style-type: none;
+    background-image: url("images/ddd.jpg");
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrap {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+.timer__container {
+    height: 5px;
+}
+.timer__container .timer {
+    height: 100%;
+    background-color: #000;
+}
+.scores__container {
+    margin-top: 0.5em;
+}
+.scores__container > * {
+    display: inline-block;
+}
+.scores__container .score__container {
+    float: left;
+}
+.scores__container .pb__container {
+    display: none;
+    float: right;
+}
+.scores__container p {
+    color: #8a8a8a;
+}
+.scores__container .score {
+    font-size: 1em;
+}
+.title {
+    margin: 0em;
+    text-align: center;
+    font-size: 2.5em;
+    color: #4a4a4a;
+}
+.subtitle {
+    margin-bottom: 1.1em;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 1.4em;
+}
+.subtitle em {
+    padding-bottom: 2px;
+    display: inline-block;
+    border-bottom: 2px solid #4a4a4a;
+}
+
+.start {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #000;
+    font-size: 2.5em;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+.word {
+    font-size: 2.5em;
+    text-align: center;
+}
+.options__container {
+    margin: 1em ;
+}
+.options__container li {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.options__container button {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.5em;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+
+
+
+#restart {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.modal__container {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.modal__container .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    padding: 25px 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url("images/ddd.jpg");
+    border-radius: 5px;
+    border: 3px solid #000;
+}
+
+.modal__container p {
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal__container button {
+    margin: 50px auto 0;
+    padding: 1em;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-image: url("images/ddd.jpg");
+    color: #000;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+
